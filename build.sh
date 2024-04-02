@@ -29,6 +29,7 @@ rm -rf squashfs4.3
 
 # Extract squashfs4.3.tar.gz
 tar -zxvf squashfs4.3.tar.gz
+sed -i 's/-Wall -Werror/-Wall/g' patches/patch0.txt
 
 # Patch, build, and install the source
 cd squashfs4.3
