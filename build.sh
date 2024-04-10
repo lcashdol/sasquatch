@@ -1,5 +1,6 @@
 #!/bin/bash
 # Script to download squashfs-tools v4.3, apply the patches, perform a clean build, and install.
+export CFLAGS=-fcommon 
 
 # If not root, perform 'make install' with sudo
 if [ $UID -eq 0 ]
